@@ -7,9 +7,10 @@
   "main": "index.js",
   "scripts": {
     "autoprefix:build": "npx postcss dist/*.css --replace --use autoprefixer",
-    "build": "npx npm-run-all -s clean eleventy sass:build autoprefix:build",
+    "build": "npx npm-run-all -s clean eleventy lint:css sass:build autoprefix:build",
     "clean": "npx rimraf dist",
     "eleventy": "npx eleventy",
+    "lint:css": "npx stylelint src/css/**/*.scss",
     "serve": "npx @11ty/eleventy --serve",
     "sass:build": "npx sass --no-source-map --load-path=node_modules src/css:dist --style=compressed",
     "sass:watch": "npx sass --no-source-map --load-path=node_modules src/css:dist --watch",
