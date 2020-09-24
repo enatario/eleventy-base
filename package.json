@@ -1,0 +1,29 @@
+{
+  "name": "11ty-base",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Elaina Natario",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "autoprefix:build": "npx postcss dist/*.css --replace --use autoprefixer",
+    "build": "npx npm-run-all -s clean eleventy sass:build autoprefix:build",
+    "clean": "npx rimraf dist",
+    "eleventy": "npx eleventy",
+    "serve": "npx @11ty/eleventy --serve",
+    "sass:build": "npx sass --no-source-map --load-path=node_modules src/css:dist --style=compressed",
+    "sass:watch": "npx sass --no-source-map --load-path=node_modules src/css:dist --watch",
+    "start": "npx npm-run-all -p serve sass:watch"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "@thoughtbot/stylelint-config": "^2.0.0",
+    "autoprefixer": "^9.8.5",
+    "normalize.css": "^8.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.1",
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.10",
+    "stylelint": "^13.6.1"
+  }
+}
