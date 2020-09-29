@@ -2,5 +2,8 @@
 @import "normalize.css/normalize";
 @import "reset/layout";
 
+// Dependencies
+@import "bourbon/core/bourbon";
+
 // Utilities
 @import "utilities/hide-visually";
