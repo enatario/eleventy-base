@@ -7,7 +7,7 @@
   "main": "index.js",
   "scripts": {
     "autoprefix:build": "npx postcss dist/*.css --replace --use autoprefixer",
-    "build": "npx npm-run-all -s clean eleventy lint:css lint:js sass:build autoprefix:build",
+    "build": "npx npm-run-all -s clean eleventy lint:css lint:js sass:build autoprefix:build js:build",
     "clean": "npx rimraf dist",
     "eleventy": "npx eleventy",
     "js:build": "rollup -c rollup.config.js",
@@ -17,7 +17,7 @@
     "serve": "npx @11ty/eleventy --serve",
     "sass:build": "npx sass --no-source-map --load-path=node_modules src/css:dist --style=compressed",
     "sass:watch": "npx sass --no-source-map --load-path=node_modules src/css:dist --watch",
-    "start": "npx npm-run-all -p serve sass:watch"
+    "start": "npx npm-run-all -p serve sass:watch js:watch"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
