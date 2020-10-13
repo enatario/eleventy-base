@@ -1,6 +1,6 @@
 import isMobile from "./isMobile";
 
-// Inspired by: 
+// Inspired by:
 // https://gist.github.com/rcmachado/7303143
 // http://mvartan.com/2014/12/20/fixing-sticky-hover-on-mobile-devices/
 
