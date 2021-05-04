@@ -14,6 +14,9 @@ export default {
       babelHelpers: "bundled",
       exclude: "node_modules/**"
     }),
+    commonjs({
+      transformMixedEsModules: true
+    }),
     nodeResolve(),
     terser()
   ]
