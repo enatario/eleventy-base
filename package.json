@@ -24,7 +24,7 @@
     "url": "git://github.com/enatario/eleventy-base.git"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy": "^2.0.1",
     "@babel/core": "^7.17.9",
     "@babel/preset-env": "^7.16.11",
     "@rollup/plugin-babel": "^5.3.1",
