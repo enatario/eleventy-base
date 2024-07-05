@@ -9,11 +9,12 @@ Includes:
 
 ## Pre-requisites
 * [Node]
+* [Yarn]
 * A general understanding of [11ty]
 
 ## Setup
 * Use [this template][template] to generate a version in your own Github repo, or clone this locally and manually add to your remote repo.
-* Run `npm i`
+* Run `yarn`
 
 ## Run locally
 * Run `npm start`
@@ -40,6 +41,7 @@ Includes:
 
 [11ty]: https://www.11ty.dev/
 [Node]: https://nodejs.org/
+[Yarn]: https://classic.yarnpkg.com/en/
 [template]: https://github.com/enatario/eleventy-base/generate
 [Nunjucks]: https://mozilla.github.io/nunjucks/
 [collections]: https://www.11ty.dev/docs/collections/
